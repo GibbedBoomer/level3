@@ -8,6 +8,8 @@ var interval = 1000/60;
 var player;
 var player2;
 var ball;
+var p1Wins = 0;
+var p2Wins = 0;
 
 	//Set Up the Canvas
 	canvas = document.getElementById("canvas");
@@ -24,10 +26,16 @@ var ball;
 	//Set the Animation Timer
 	timer = setInterval(animate, interval);
 
+	context.font = "20px Georgia"
+
 function animate()
 {
 	//Erase the Screen
-	context.clearRect(0,0,canvas.width, canvas.height);	
+	context.clearRect(0,0,canvas.width, canvas.height);
+
+	//Score
+	context.fillText("Player 1  | Player 2", canvas.width/2 , 50);
+	context.fillText(p1Wins + "                " + p2Wins, canvas.width/2 , 75);
 
 	//move ball
 	ball.move();
@@ -39,6 +47,7 @@ function animate()
 		ball.y = ball.prevY;
 		ball.vx = -2;
 		ball.vy = 0;
+		p1Wins++;
 	}
 	//---------------------------------------------------
 
@@ -49,6 +58,7 @@ function animate()
 		ball.y = ball.prevY;
 		ball.vx = -2;
 		ball.vy = 0;
+		p2Wins++;
 	}
 	//---------------------------------------------------
 
