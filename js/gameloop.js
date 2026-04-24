@@ -14,8 +14,8 @@ var ball;
 	context = canvas.getContext("2d");	
 	
 	//Instantiate the Player and NPCs
-	player = new GameObject(50,450,25,150,"purple");
-	player2 = new GameObject(canvas.width - 50,450,25,150,"green");
+	player = new GameObject(100,450,25,150,"purple");
+	player2 = new GameObject(canvas.width - 100,450,25,150,"green");
 	ball = new GameObject(450,450,30,30,"red");
 	//npc1 = new GameObject(50,500,100,100,"yellow");
 	//npc2 = new GameObject(500,500,100,100,"yellow");
