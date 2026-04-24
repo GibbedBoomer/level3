@@ -45,7 +45,7 @@ function animate()
 	{
 		ball.x = ball.prevX;
 		ball.y = ball.prevY;
-		ball.vx = -2;
+		ball.vx = -4;
 		ball.vy = 0;
 		p1Wins++;
 	}
@@ -56,7 +56,7 @@ function animate()
 	{
 		ball.x = ball.prevX;
 		ball.y = ball.prevY;
-		ball.vx = -2;
+		ball.vx = -4;
 		ball.vy = 0;
 		p2Wins++;
 	}
