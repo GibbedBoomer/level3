@@ -37,6 +37,8 @@ function animate()
 	{
 		ball.x = ball.prevX;
 		ball.y = ball.prevY;
+		ball.vx = -2;
+		ball.vy = 0;
 	}
 	//---------------------------------------------------
 
@@ -45,6 +47,8 @@ function animate()
 	{
 		ball.x = ball.prevX;
 		ball.y = ball.prevY;
+		ball.vx = -2;
+		ball.vy = 0;
 	}
 	//---------------------------------------------------
 
