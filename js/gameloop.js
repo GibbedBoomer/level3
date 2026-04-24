@@ -132,7 +132,7 @@ function animate()
 	{
 		if (ball.y < player2.y - 25)
 		{
-			ball.vx = ball.vx + ball.force;
+			ball.vx = ball.vx - ball.force;
 			ball.vy = ball.vy - ball.force;
 		}
 	}
@@ -151,7 +151,7 @@ function animate()
 	{
 		if (ball.y > player2.y + 25)
 		{
-			ball.vx = ball.vx + ball.force;
+			ball.vx = ball.vx - ball.force;
 			ball.vy = ball.vy + ball.force;
 		}
 	}
