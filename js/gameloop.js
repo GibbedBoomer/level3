@@ -1,5 +1,4 @@
 //Declare my variables
-
 var canvas;
 var context;
 var timer;
@@ -33,9 +32,20 @@ function animate()
 	//Erase the Screen
 	context.clearRect(0,0,canvas.width, canvas.height);
 
+	//draw line
+	context.save();
+	context.strokeStyle = "yellow"
+	context.beginPath();
+	context.moveTo(canvas.width/2,0);
+	context.lineTo(canvas.width/2,canvas.height);
+	context.closePath();
+	context.lineWidth = 2
+	context.stroke();
+	context.restore();
+
 	//Score
-	context.fillText("Player 1  | Player 2", canvas.width/2 , 50);
-	context.fillText(p1Wins + "                " + p2Wins, canvas.width/2 , 75);
+	context.fillText("Player 1  | Player 2", canvas.width/2 - 82, 50);
+	context.fillText(p1Wins + "                             " + p2Wins, canvas.width/2 - 82, 75);
 
 	//move ball
 	ball.move();
