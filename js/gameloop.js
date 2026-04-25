@@ -9,6 +9,7 @@ var player2;
 var ball;
 var p1Wins = 0;
 var p2Wins = 0;
+var img=document.getElementById("ric");
 
 	//Set Up the Canvas
 	canvas = document.getElementById("canvas");
@@ -210,9 +211,6 @@ function animate()
 	//Update the Screen
 	player.drawRect();
 	player2.drawRect();
-	ball.drawCircle();
-	//npc1.drawCircle();
-	//npc2.drawCircle();
-	//npc3.drawCircle();
+	context.drawImage(img, ball.x - ball.width / 2, ball.y - ball.height / 2, ball.width,ball.height);
+
 }
-ball.drawCircle();

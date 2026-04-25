@@ -77,7 +77,8 @@ function GameObject(x,y,w,h,color)
 			context.fill();
 		context.restore();
 		
-	}	
+	}
+	
 	
 	//This changes the player's position
 	this.move = function()
